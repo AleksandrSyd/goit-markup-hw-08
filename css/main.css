@@ -1433,6 +1433,7 @@ textarea {
   padding: 0;
   border: none;
   background-color: transparent;
+  cursor: pointer;
 }
 .menu-tel .icon-close:hover, .menu-tel .icon-close:focus {
   fill: #2196F3;
