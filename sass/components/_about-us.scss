@@ -1,0 +1,48 @@
+/*------- about us ------------*/
+.services {
+  padding-bottom: 94px;
+
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+}
+
+.services__list {
+  display: flex;
+  margin: 0;
+  z-index: -1;
+
+  &:last-child {
+    margin-right: 0;
+    line-height: 0;
+  }
+}
+
+.services__item {
+  display: inline-block;
+  margin-right: 30px;
+  position: relative;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.services__title {
+  display: block;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $hero-color;
+  cursor: pointer;
+
+  width: 100%;
+  margin: 0;
+  position: absolute;
+  bottom: 0px;
+  padding: 27px;
+  background: rgba(47, 48, 58, 0.8);
+}

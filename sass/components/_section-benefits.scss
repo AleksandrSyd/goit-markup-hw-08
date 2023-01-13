@@ -1,0 +1,84 @@
+/*-------- section benefits - переваги ---------*/
+
+.benefits {
+  margin-bottom: 0;
+  list-style: none;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+}
+
+.benefits__item {
+  
+   margin-right: 0;
+
+   @media screen and (min-width: 768px) {
+    flex-basis: 354px;
+    width: calc((100% - 2 * 30px) / 2);
+    margin: 15px;
+        }
+
+   @media screen and (min-width: 1200px) {
+    flex-basis: 270px;
+         }
+
+
+}
+
+/* svg benefits */
+.benefits__item::before {
+  display: block;
+  content: "";
+  height: 120px;
+  background: $second-background;
+  border-radius: 4px;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 30px;
+}
+
+
+
+.antenna::before {
+  background-image: url(../img/after_header/antenna\ .svg);
+}
+
+.clock::before {
+  background-image: url(../img/after_header/clock\ .svg);
+}
+
+.diagram::before {
+  background-image: url(../img/after_header/diagram.svg);
+}
+
+.astronaut::before {
+  background-image: url(../img/after_header/astronaut\ .svg);
+}
+
+.benefits__title {
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  color: $text-title-color;
+  letter-spacing: 0.03em;
+
+  @media screen and (max-width: 768px) {
+    display: flex;
+    justify-content: center;
+  }
+
+  @media screen and (max-width: 768px) {
+    justify-content: flex-start;
+  }
+}
+
+.benefits__text {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  margin-bottom: 0;
+}

@@ -1,0 +1,39 @@
+.contain-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.logo {
+    color: $secretion-color;
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 24px;
+     line-height: 1.16;
+    letter-spacing: 0.03em;
+    display: flex;
+    justify-content: center;
+ 
+
+    .bg-logo {
+        color: $logo-color;
+    }
+
+    .bg-logo-footer {
+        color: $hero-color;
+    }
+
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+
+   @media screen and (min-width: 1200px) {
+    font-size: 26px;
+    line-height: 1.19;
+    justify-content: start;
+    
+  }
+}

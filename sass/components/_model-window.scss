@@ -1,0 +1,247 @@
+
+/*-------------- model window -------------*/
+
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    opacity: 1;
+    z-index: 1;
+    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+.backdrop.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+    
+}
+
+.backdrop.is-hidden .modal {
+    transform: translate(-50%, -50%) scale(0,9);
+}
+
+.modal {
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-height: 609px;
+    min-width: 450px;
+    background:  $hero-color;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    transform: translate(-50%, -50%) scale(1);
+
+
+    @media screen and (min-width: 1200px) {
+     min-height: 581px;
+     min-width: 528px;
+    }
+}
+
+.form__call-me {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $text-title-color;
+    margin-bottom: 12px;
+}
+
+
+
+
+  /* ---modal-close---- */
+
+.modal-close {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    cursor: pointer;
+    
+    background:  $hero-color;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+      &:hover,
+      &:focus {
+    fill: $secretion-color;
+    }
+}
+
+.close {
+    width: 11px;
+    height: 11px;
+    align-items: center;
+    cursor: pointer;    
+}
+
+
+
+
+/* -----------------form--------------------------- */
+
+
+textarea {
+    resize: none;   
+}
+/* form */
+
+.form__field {  
+    display: block;
+    margin-bottom: 10px;
+}
+
+.form__label {
+    display: flex;
+    margin-bottom: 4px;
+
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    color:  $primary-text-color;
+
+}
+
+.form__contain:focus-within > .form__icon {
+       fill: $secretion-color;
+}
+
+.form__contain {
+    position: relative;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+}
+
+.form__icon {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form__input {
+    width: 100%;
+    margin: 0px;
+    padding-left: 42px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    font: inherit;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+
+}
+
+.form__comment {
+        font-size: 12px;
+        line-height: 14px;
+        letter-spacing: 0.01em;
+
+
+}
+.label__comment {
+    display: flex;
+     padding-bottom: 4px;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+    color: $primary-text-color;
+}
+
+.textarea__comment {
+    width: 100%;
+    height: 120px;
+    padding: 12px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    margin-bottom: 20px; 
+}
+
+.form__comment textarea::placeholder {
+    color: rgba(117, 117, 117, 0.5);
+}
+
+
+.checkbox {
+    display: inline-flex;
+    flex-wrap: wrap;
+    align-content: center;
+    margin-bottom: 30px;   
+}
+
+.checkbox__input {
+    appearance: none;
+}
+
+.checkbox__label {
+    margin-left: 8px;
+    font-size: 12px;
+    line-height: 1.17;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.71; 
+  }  
+}
+
+.checkbox__svg {
+    display: inline-block;
+    width: 15px;
+    height: 16px;
+    border: 1px solid $text-title-color;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.checkbox__input:checked+.checkbox__svg {
+    background-color: $secretion-color;
+    background-image: url(../img/done.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-origin: border-box;
+    border-color: transparent;
+}
+
+
+.checkbox__link {
+  text-decoration: none;
+  color: $secretion-color;
+  border-bottom: 1px solid $secretion-color;
+
+}
+
+.button__madal {
+    display: flex;
+    justify-content: center;
+}
+
+.button__modal-text {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18.8px;
+    text-align: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color:  $hero-color;
+
+    min-width: 200px;
+    height: 50px;
+    border: 1px solid transparent;
+    background:  $secretion-color;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    cursor: pointer;
+
+
+}
