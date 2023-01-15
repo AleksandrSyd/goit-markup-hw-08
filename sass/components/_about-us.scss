@@ -28,7 +28,7 @@
   }
 }
 
-.services__title {
+.services__text {
   display: block;
   font-weight: 700;
   font-size: 14px;
@@ -45,4 +45,16 @@
   bottom: 0px;
   padding: 27px;
   background: rgba(47, 48, 58, 0.8);
+}
+
+
+.services__title {
+font-weight: 700;
+font-size: 36px;
+line-height: 42px;
+text-align: center;
+letter-spacing: 0.03em;
+margin-bottom: 50px;
+
+color: $text-title-color;;
 }

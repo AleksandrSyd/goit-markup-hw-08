@@ -67,12 +67,7 @@
   letter-spacing: 0.03em;
 
   @media screen and (max-width: 768px) {
-    display: flex;
-    justify-content: center;
-  }
-
-  @media screen and (max-width: 768px) {
-    justify-content: flex-start;
+    text-align: center;
   }
 }
 

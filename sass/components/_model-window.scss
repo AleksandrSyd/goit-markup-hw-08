@@ -41,6 +41,11 @@
      min-height: 581px;
      min-width: 528px;
     }
+    @media screen and (max-width: 480px) {
+        min-width: auto;
+        min-height: auto;
+    }
+
 }
 
 .form__call-me {
@@ -176,7 +181,8 @@ textarea {
     display: inline-flex;
     flex-wrap: wrap;
     align-content: center;
-    margin-bottom: 30px;   
+    margin-bottom: 30px;  
+     
 }
 
 .checkbox__input {
@@ -184,11 +190,16 @@ textarea {
 }
 
 .checkbox__label {
-    margin-left: 8px;
     font-size: 12px;
     line-height: 1.17;
+    
+   @media screen and (min-width: 480px) {
+    display: inline-flex;
+    align-items: center;
+   }
 
   @media screen and (min-width: 1200px) {
+    margin-left: 8px;
     font-size: 14px;
     line-height: 1.71; 
   }  
@@ -201,6 +212,7 @@ textarea {
     border: 1px solid $text-title-color;
     border-radius: 2px;
     cursor: pointer;
+    margin-right: 8px;
 }
 
 .checkbox__input:checked+.checkbox__svg {
@@ -215,6 +227,7 @@ textarea {
 
 
 .checkbox__link {
+   margin-left: 3px;
   text-decoration: none;
   color: $secretion-color;
   border-bottom: 1px solid $secretion-color;

@@ -188,10 +188,14 @@
   color: $secretion-color;
 }
 
+.mobile-menu .current {
+  color: $secretion-color;
+}
+
 .current::after {
   content: "";
   position: absolute;
-  bottom: -1px;
+  bottom: 0;
   display: block;
   left: 0;
   width: 100%;
@@ -199,5 +203,9 @@
   background: $secretion-color;
   border-radius: 2px;
   opacity: 1;
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
 
 }

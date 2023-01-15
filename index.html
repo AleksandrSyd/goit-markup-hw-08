@@ -89,19 +89,20 @@
         </div>
     </section> 
     <section class="services"> 
-        <div class="container">           
+        <div class="container"> 
+            <h2 class="services__title"> Чим ми займаємося</h2>          
             <ul class="services__list">
                 <li class="services__item">
                     <img src="./img/h2/img.jpg" alt="айпад в руці" width="370">
-                     <p  class="services__title">Десктопні додатки</p>
+                     <p  class="services__text">Десктопні додатки</p>
                 </li>     
                 <li class="services__item">
                     <img src="./img/h2/img-2.jpg" alt="Телефон та компьютер" width="370">
-                    <p  class="services__title">Десктопні додатки</p>
+                    <p  class="services__text">Десктопні додатки</p>
                 </li>
                 <li class="services__item">
                     <img src="./img/h2/img-3.jpg" alt="пише код на клавіатурі" width="370">
-                   <p  class="services__title">Десктопні додатки</p>
+                   <p  class="services__text">Десктопні додатки</p>
                 </li>
             </ul>
         </div> 
@@ -274,7 +275,8 @@
           </div>  
         </section>
      
-        <section class="container section">
+        <section class="section">
+            <div class="container">
               <h2 class="clients">Постійні клієнти</h2>
                <ul class="brand">
 
@@ -323,6 +325,7 @@
                     </a>
                 </li>
                </ul>
+            </div>
         </section>
     </main>
 
@@ -333,7 +336,7 @@
 
             <div class="contain-block">
                  <a href="./index.html" class="logo contain-block__logo"><span>Web<span class="bg-logo-footer">Studio</span></span></a>
-                <address>
+                <address class="contain-block__address">
                     <ul class="contain-block__footer-contacts">
                         <li class="footer-contacts__list">
                             <a href="https://goo.gl/maps/AqYwmnDAayiFbczU9" rel="noopener noreferrer" target="_blank"
@@ -486,10 +489,10 @@
                             <textarea class="textarea__comment" name="comment" id="comment" rows="10" placeholder="Введіть текст"></textarea>
                     </div>
                     <div class="checkbox">
-                        <span class="checkbox__svg"></span> 
-                             <label class="checkbox__label" for="checkbox"> Погоджуюся з розсилкою та приймаю <a class="checkbox__link" href="#">Умови договору</a>
+                             <label class="checkbox__label" for="checkbox">
+                             <input class="checkbox__input" type="checkbox" name="checkbox" id="checkbox"  />
+                             <span class="checkbox__svg"></span> Погоджуюся з розсилкою та приймаю <a class="checkbox__link" href="#"> Умови договору</a>
                               </label>
-                             
                     </div>
                     <div class="button__madal">
                        <button class="button__modal-text" type="submit">Відправити</button>
