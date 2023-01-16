@@ -29,7 +29,7 @@
 
 
 .menu-tel {
-  position: fixed;
+  position: absolute;
   top: 10px;
   right: 15px;
   padding: 0;
@@ -51,8 +51,15 @@
 
 .list-menu__item-mobile {
  margin-bottom: 32px;
+
+    &:last-child {
+      margin-bottom: 0px;
+    }
 }
 
+.mobile-menu__list-menu {
+  margin-bottom: 306px;
+}
 
 .menu-mobile {
   font-weight: 500;
@@ -72,9 +79,7 @@
 // mobile contacts
 
 .mobile-menu__contacts {
-  margin-bottom: 134px;
-  position: fixed;
-  bottom: 0;
+  margin-bottom: 64px;
 }
 
 
@@ -106,14 +111,11 @@
 .head__mobail-item {
   display: flex;
   flex-wrap: wrap;
-  position: fixed;
-  margin-bottom: 48px;
-  bottom: 0;
 }
 
 
 .mobail-item__link {
-  margin-left: 20px;
+  margin-left: 10px;
   padding-right: 10px;
   border-right: 1px solid rgba(33, 33, 33, 0.2); 
 
@@ -127,7 +129,7 @@
     text-decoration: none;
     font-weight: 500;
     font-size: 18px;
-    line-height: 12,2;
+    line-height: 22px;
     letter-spacing: 0.02em;
     color: $secretion-color;
 }

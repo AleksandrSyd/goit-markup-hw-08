@@ -12,7 +12,6 @@
   @media screen and (min-width: 1200px) {
     display: flex;
     padding: 60px 0;
-    align-items: flex-start;
   }
 }
 
@@ -40,6 +39,7 @@
   display: flex;
   justify-content: space-around;
   margin-bottom: 0;
+  align-items: baseline;
   }
 }
 
